@@ -7,8 +7,7 @@
 }
 \usage{
 cPlot(plotChroms, useChroms=chromNames(plotChroms),
-      scale=c("relative","max"), fg="white", bg="lightgrey", 
-      glen=0.4, xlab="", ylab="Chromosome",  main = organism(plotChroms))
+      scale=c("relative","max"), fg="white", bg="lightgrey", glen=0.4)
 }
 \arguments{
   \item{plotChroms}{An object of type chromLocation which contains all
@@ -23,9 +22,6 @@ cPlot(plotChroms, useChroms=chromNames(plotChroms),
   \item{glen}{A scaling factor applied to the plotted length of each
     gene.  Defaults to 0.4 - it is recommended that this not be set
     larger then 0.5 as it will cause overlap between chromosomes.}
-  \item{xlab}{A label for the x axis.}
-  \item{ylab}{A label for the y axis.}
-  \item{main}{A main label for the plot.}
 }
 \details{
   This function will first use the lengths of the chromosomes, stored in
